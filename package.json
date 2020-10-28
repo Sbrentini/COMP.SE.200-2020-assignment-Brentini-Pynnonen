@@ -1,0 +1,23 @@
+{
+  "name": "comp.se.200-2020-assignment-brentini-pynnonen-1",
+  "version": "1.0.0",
+  "description": "Tämä on testi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbrentini/COMP.SE.200-2020-assignment-Brentini-Pynnonen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sbrentini/COMP.SE.200-2020-assignment-Brentini-Pynnonen/issues"
+  },
+  "homepage": "https://github.com/Sbrentini/COMP.SE.200-2020-assignment-Brentini-Pynnonen#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  }
+}
