@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Tämä on testi",
   "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha" 
   },
   "repository": {
     "type": "git",
