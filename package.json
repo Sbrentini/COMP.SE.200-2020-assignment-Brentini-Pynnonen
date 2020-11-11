@@ -8,8 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha || true",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "mocha || true"
   },
   "repository": {
     "type": "git",
