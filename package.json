@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Sbrentini/COMP.SE.200-2020-assignment-Brentini-Pynnonen#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "jscoverage": "^0.6.0",
     "mocha": "^8.2.0",
     "mocha-lcov-reporter": "^1.3.0"
   },
