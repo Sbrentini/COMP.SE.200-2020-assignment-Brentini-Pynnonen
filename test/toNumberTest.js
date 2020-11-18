@@ -8,6 +8,7 @@ describe('Field test for toNumber', function(){
     let numArray = [5]
     let str = '5'
     let str2 = ' 5 '
+    let str3 = 'abc'
 
     it('num to number', function(){
         assert.isNumber(toNumber(num))
@@ -21,11 +22,16 @@ describe('Field test for toNumber', function(){
         assert.isNumber(toNumber(numArray))
     })
     
-    it('str to number', function(){
+    it('string to number', function(){
         assert.isNumber(toNumber(str))
     })
 
     it('string with whitespace to number', function(){
         assert.isNumber(toNumber(str2))
     })
+
+    // string is not a valid number and should give NaN
+    it('string to number', function(){
+        assert.isNaN(toNumber(str3))
+   })
 });
