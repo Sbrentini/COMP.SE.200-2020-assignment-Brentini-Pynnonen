@@ -1,8 +1,6 @@
 {
   "all": true,
   "include": [
-    "test/**.js"
-  ],
-  "exclude": [
+    "javascript-library/src/**.js"
   ]
 }
