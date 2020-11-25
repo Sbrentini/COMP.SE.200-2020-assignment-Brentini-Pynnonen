@@ -1,4 +1,4 @@
-import toNumber from '../javascript-library/src/toNumber.js'
+import toNumber from '../src/toNumber.js'
 import pkg from 'chai'
 const { assert } = pkg
 

@@ -1,4 +1,4 @@
-import divide from '../javascript-library/src/divide.js'
+import divide from '../src/divide.js'
 import pkg from 'chai'
 const { assert } = pkg
 

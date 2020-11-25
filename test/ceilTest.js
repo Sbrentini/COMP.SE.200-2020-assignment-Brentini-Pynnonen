@@ -1,4 +1,4 @@
-import ceil from '../javascript-library/src/ceil.js'
+import ceil from '../src/ceil.js'
 import pkg from 'chai'
 const { assert } = pkg
 

@@ -1,4 +1,4 @@
-import add from '../javascript-library/src/add.js'
+import add from '../src/add.js'
 import pkg from 'chai'
 const { assert } = pkg
 

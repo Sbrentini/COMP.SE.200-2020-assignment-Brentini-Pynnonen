@@ -1,4 +1,4 @@
-import castArray from '../javascript-library/src/castArray.js'
+import castArray from '../src/castArray.js'
 import pkg from 'chai'
 const { assert } = pkg
 

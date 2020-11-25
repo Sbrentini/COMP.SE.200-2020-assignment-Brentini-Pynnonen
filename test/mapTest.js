@@ -1,4 +1,4 @@
-import map from '../javascript-library/src/map.js'
+import map from '../src/map.js'
 import pkg from 'chai'
 const { assert } = pkg
 

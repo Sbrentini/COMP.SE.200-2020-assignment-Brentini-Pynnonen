@@ -1,4 +1,4 @@
-import upperFirst from '../javascript-library/src/upperFirst.js'
+import upperFirst from '../src/upperFirst.js'
 import pkg from 'chai'
 const { assert } = pkg
 

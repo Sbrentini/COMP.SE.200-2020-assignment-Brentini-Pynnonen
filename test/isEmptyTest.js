@@ -1,4 +1,4 @@
-import isEmpty from '../javascript-library/src/isEmpty.js'
+import isEmpty from '../src/isEmpty.js'
 import pkg from 'chai'
 const { assert } = pkg
 

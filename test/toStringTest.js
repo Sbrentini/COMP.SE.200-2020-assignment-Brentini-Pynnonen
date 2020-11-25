@@ -1,4 +1,4 @@
-import toString from '../javascript-library/src/toString.js'
+import toString from '../src/toString.js'
 import pkg from 'chai'
 const { assert } = pkg
 

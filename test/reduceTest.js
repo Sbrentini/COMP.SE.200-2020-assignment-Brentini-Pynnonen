@@ -1,4 +1,4 @@
-import reduce from '../javascript-library/src/reduce.js'
+import reduce from '../src/reduce.js'
 import pkg from 'chai'
 const { assert } = pkg
 

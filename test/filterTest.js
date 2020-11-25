@@ -1,4 +1,4 @@
-import filter from '../javascript-library/src/filter.js'
+import filter from '../src/filter.js'
 import pkg from 'chai'
 const { assert } = pkg
 

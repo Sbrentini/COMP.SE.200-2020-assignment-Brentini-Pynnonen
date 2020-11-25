@@ -1,4 +1,4 @@
-import countBy from '../javascript-library/src/countBy.js'
+import countBy from '../src/countBy.js'
 import pkg from 'chai'
 const { assert } = pkg
 

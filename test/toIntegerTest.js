@@ -1,4 +1,4 @@
-import toInteger from '../javascript-library/src/toInteger.js'
+import toInteger from '../src/toInteger.js'
 import pkg from 'chai'
 const { assert } = pkg
 

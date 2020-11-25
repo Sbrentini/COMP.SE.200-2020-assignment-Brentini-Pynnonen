@@ -1,4 +1,4 @@
-import capitalize from '../javascript-library/src/capitalize.js'
+import capitalize from '../src/capitalize.js'
 import pkg from 'chai'
 const { assert } = pkg
 

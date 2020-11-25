@@ -1,4 +1,4 @@
-import isSymbol from '../javascript-library/src/isSymbol.js'
+import isSymbol from '../src/isSymbol.js'
 import pkg from 'chai'
 const { assert } = pkg
 

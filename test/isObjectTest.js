@@ -1,4 +1,4 @@
-import isObject from '../javascript-library/src/isObject.js'
+import isObject from '../src/isObject.js'
 import pkg from 'chai'
 const { assert } = pkg
 
