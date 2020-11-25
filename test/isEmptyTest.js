@@ -43,9 +43,8 @@ describe('Field test for isEmpty', function(){
         assert.isTrue(isEmpty(null))
     })
 
-    // Onko numero on tyhjä objekti?
-    it('number is not empty', function() {
-        assert.isFalse(isEmpty(number))
+    it('number is empty', function() {
+        assert.isTrue(isEmpty(number))
     })
 
 })
