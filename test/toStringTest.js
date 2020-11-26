@@ -8,9 +8,10 @@ describe('Unit test for toString', function (){
     let num = 5;
     let array = ['This', 'is', 'an', 'Array', 6, 2, 6.00];
     let empty = null;
+    let symbol = Symbol('£')
+
 
     it('String to String', function(){
-        // toString shouldn't change the str values, and instead return as it is. 
         assert.equal(toString(str), str);
     })
 
@@ -23,8 +24,14 @@ describe('Unit test for toString', function (){
     })
 
     // Used for handling null values 
-    it('null to empty string', function(){
+    it('Null to empty string', function(){
         assert.isString(toString(empty));
     })
+
+    it('Symbol to string', function(){
+        assert.isString(toString(symbol));
+    })
+
+
 
 });
