@@ -2,7 +2,7 @@ import upperFirst from '../src/upperFirst.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for upperFirst', function (){
+describe('Unit test for upperFirst', function (){
 
     let str1 = 'test';
     let str2 = 'let\'s test a sentence.';
@@ -19,5 +19,4 @@ describe('Field test for upperFirst', function (){
     it('All capitalized test', function(){
         assert.equal(upperFirst(str3), str3);
     })
-
 });

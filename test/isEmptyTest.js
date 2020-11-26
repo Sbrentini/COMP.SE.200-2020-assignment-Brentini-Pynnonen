@@ -2,7 +2,7 @@ import isEmpty from '../src/isEmpty.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for isEmpty', function(){
+describe('Unit test for isEmpty', function(){
     let str = 'abc'
     let emptyStr = ''
     let array = [1, 2, 3]

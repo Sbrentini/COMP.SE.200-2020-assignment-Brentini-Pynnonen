@@ -2,7 +2,7 @@ import map from '../src/map.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for map', function (){
+describe('Unit test for map', function (){
 
     let priceArray = [ 12.00, 50, 99.99, 5.25, 1];
     let expectedPriceArray = [ 6, 25, 49.995, 2.625, 0.5 ]

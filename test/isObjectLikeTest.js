@@ -2,7 +2,7 @@ import isObjectLike from '../src/isObjectLike.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for isObjectLike', function(){
+describe('Unit test for isObjectLike', function(){
     let map = {}
     let array = [1, 2, 3]
     let str = 'asd'

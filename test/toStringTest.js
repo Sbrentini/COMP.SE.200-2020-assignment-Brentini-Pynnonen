@@ -2,8 +2,7 @@ import toString from '../src/toString.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for toString', function (){
-
+describe('Unit test for toString', function (){
 
     let str = 'this is a string';
     let num = 5;

@@ -2,7 +2,7 @@ import toInteger from '../src/toInteger.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for toInteger', function(){
+describe('Unit test for toInteger', function(){
     let num = 5
     let float = 5.3
     let numStr = '5.3'

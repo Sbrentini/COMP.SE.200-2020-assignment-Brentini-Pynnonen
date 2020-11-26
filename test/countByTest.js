@@ -3,7 +3,7 @@ import pkg from 'chai'
 const { assert } = pkg
 
 
-describe('Field test for counting occurances from a collection', function (){
+describe('Unit test for counting occurances from a collection', function (){
     
     const products = [
         {'name': 'apple', 'cost': 1.00, 'type': 'fruit', 'available': true},

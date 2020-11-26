@@ -2,7 +2,7 @@ import add from '../src/add.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for add', function(){
+describe('Unit test for add', function(){
 
     it('Add positive numbers', function (){
         assert.equal(add(5, 7), 12)

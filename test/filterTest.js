@@ -2,7 +2,7 @@ import filter from '../src/filter.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for filter', function(){
+describe('Unit test for filter', function(){
     let products = [
         {'name': 'tomato', 'cart': true, 'type': 'vegetable'},
         {'name': 'cucumber', 'cart': false, 'type': 'vegetable'},

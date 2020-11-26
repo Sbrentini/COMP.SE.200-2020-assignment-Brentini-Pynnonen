@@ -2,7 +2,7 @@ import capitalize from '../src/capitalize.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for capitalize', function (){
+describe('Unit test for capitalize', function (){
 
     let str1 = 'TEST';
     let str2 = 'ranDomISed CaPitaLiZAtion.'

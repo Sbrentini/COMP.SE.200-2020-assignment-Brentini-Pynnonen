@@ -2,7 +2,7 @@ import castArray from '../src/castArray.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for cast array', function(){
+describe('Unit test for cast array', function(){
 
     let str = 'test';
     let num = 11;

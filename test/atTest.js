@@ -2,7 +2,7 @@ import at from '../src/at.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for at', function() {
+describe('Unit test for at', function() {
 
     const product = {'name': 'apple', 'cost': 1.00, 'type': null, 'available': true};
 

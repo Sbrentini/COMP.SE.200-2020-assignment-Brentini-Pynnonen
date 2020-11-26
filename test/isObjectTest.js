@@ -2,7 +2,7 @@ import isObject from '../src/isObject.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for isObject', function(){
+describe('Unit test for isObject', function(){
     let map = {}
     let array = [1, 2, 3]
     let str = 'asd'

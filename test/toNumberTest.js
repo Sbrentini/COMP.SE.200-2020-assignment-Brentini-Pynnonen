@@ -2,7 +2,7 @@ import toNumber from '../src/toNumber.js'
 import pkg from 'chai'
 const { assert } = pkg
 
-describe('Field test for toNumber', function(){
+describe('Unit test for toNumber', function(){
     let num = 5
     let numFloat = 5.0
     let numArray = [5]
