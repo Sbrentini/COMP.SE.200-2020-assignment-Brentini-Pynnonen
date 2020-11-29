@@ -16,9 +16,9 @@ describe('Unit test for isObjectLike', function(){
         assert.isTrue(isObjectLike(array))
     })
 
-    it('str is object-like'), function(){
+    it('str is object-like', function(){
         assert.isTrue(isObjectLike(str))
-    }
+    })
 
     it('null is not object-like', function() {
         assert.isFalse(isObjectLike(null))

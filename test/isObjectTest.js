@@ -16,9 +16,9 @@ describe('Unit test for isObject', function(){
         assert.isTrue(isObject(array))
     })
 
-    it('str is an object'), function(){
+    it('str is an object', function(){
         assert.isTrue(isObject(str))
-    }
+    })
 
     it('null is not an object', function() {
         assert.isFalse(isObject(null))
