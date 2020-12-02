@@ -11,27 +11,31 @@ const { assert } = pkg
  */
 
  describe('Integration test for capitalizing sentences', function(){
+     
+    let newProduct = {'name': 'chicken', 'type': 'meat', 'description': 'thIs IS a prODUct deScrIptiOn. the CHIckeN is FrEE-raNge.'}
 
-     let products = [
-         {'name': 'tomato', 'type': 'vegetable', 'description': 'thIs IS a prODUct deScrIptiOn. theSE tomaTOES are grown in Pirkanmaa.'},
-         {'name': 'chicken', 'type': 'meat', 'description': 'thIs IS a prODUct deScrIptiOn. the CHIckeN is FrEE-raNge.'},
-     ]
-
-     let description = products[1].description
-     let descriptionString = toString(description)
+     // Product description is a string
+     let descriptionString = toString(newProduct.description)
+     newProduct.description = descriptionString
 
      it('Convert description to string', function() {
-         assert.isString(toString(descriptionString))
+         assert.isString(newProduct.description)
      })
 
-     let descriptionUpperFirst = upperFirst(descriptionString)
+     // Product description has first letter upper case
+     let descriptionUpperFirst = upperFirst(newProduct.description)
+     newProduct.description = descriptionUpperFirst
+
      it ('Capitalize first letter of sentences in the description', function() {
-         assert.equal(descriptionUpperFirst, 'ThIs IS a prODUct deScrIptiOn. TheSE tomaTOES are grown in Pirkanmaa.')
+         assert.equal(newProduct.description, 'ThIs IS a prODUct deScrIptiOn. The CHIckeN is FrEE-raNge.')
      })
 
-     let descriptionCapitalize = capitalize(descriptionUpperFirst)
+     // Product description has first letter upper case and rest are lower case
+     let descriptionCapitalize = capitalize(newProduct.description)
+     newProduct.description = descriptionCapitalize
+     
      it('Each sentence starts with a capital letter and rest are lower case', function() {
-         assert.equal(descriptionCapitalize, 'This is a product description. These tomatoes are grown in Pirkanmaa.')
+         assert.equal(newProduct.description, 'This is a product description. The chicken is free-range.')
      })
 
 
