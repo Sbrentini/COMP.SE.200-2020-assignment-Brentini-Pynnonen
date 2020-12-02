@@ -5,8 +5,8 @@ const { assert } = pkg
 describe('Unit test for isObject', function(){
     let map = {}
     let array = [1, 2, 3]
-    let str = 'asd'
-    let num = 3
+    let str = new String('asd')
+    let num = new Number(3)
 
     it('Map is an object', function(){
         assert.isTrue(isObject(map))
@@ -16,7 +16,7 @@ describe('Unit test for isObject', function(){
         assert.isTrue(isObject(array))
     })
 
-    it('str is an object', function(){
+    it('String is an object', function(){
         assert.isTrue(isObject(str))
     })
 
@@ -28,8 +28,8 @@ describe('Unit test for isObject', function(){
         assert.isFalse(isObject(undefined))
     })
 
-    it('num is not an object', function() {
-        assert.isFalse(isObject(num))
+    it('Number is an object', function() {
+        assert.isTrue(isObject(num))
     })
 
     it('Function is an object', function(){

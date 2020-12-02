@@ -3,38 +3,49 @@ import pkg from 'chai'
 const { assert } = pkg
 
 describe('Unit test for filter', function(){
+
     let products = [
-        {'name': 'tomato', 'cart': true, 'type': 'vegetable'},
-        {'name': 'cucumber', 'cart': false, 'type': 'vegetable'},
-        {'name': 'baguette', 'cart': false, 'type': 'bread'},
-        {'name': 'chicken', 'cart': true, 'type': 'meat'}
+        {'name': 'tomato', 'available': true, 'type': 'vegetable', 'price': 1.50},
+        {'name': 'cucumber', 'available': false, 'type': 'vegetable', 'price': 0.90},
+        {'name': 'baguette', 'available': false, 'type': 'bread', 'price': 2.50},
+        {'name': 'chicken', 'available': true, 'type': 'meat', 'price': 9.85}
     ]
 
-    let filteredProductsCart = filter(products, ({ cart }) => cart)
-    let filteredProductsType = filter(products, ({ type }) => type == 'vegetable')
-    let filteredProductsProducer = filter(products, ({ producer }) => producer == 'Mäkinen')
+    it('Filtering products that are available', function() {
+        let filteredProductsAvailable = filter(products, ({ available }) => available)
+        let productsAvailable = [
+            {'name': 'tomato', 'available': true, 'type': 'vegetable', 'price': 1.50},
+            {'name': 'chicken', 'available': true, 'type': 'meat', 'price': 9.85}
+        ]
 
-    let productsInCart = [
-        {'name': 'tomato', 'cart': true, 'type': 'vegetable'},
-        {'name': 'chicken', 'cart': true, 'type': 'meat'}
-    ]
-
-    let vegetables = [
-        {'name': 'tomato', 'cart': true, 'type': 'vegetable'},
-        {'name': 'cucumber', 'cart': false, 'type': 'vegetable'}
-    ]
-
-    let emptyArray = [[]]
-
-    it('Filtering products that are in the shopping cart', function() {
-        assert.sameDeepMembers(filteredProductsCart, productsInCart)
+        assert.sameDeepMembers(filteredProductsAvailable, productsAvailable)
     })
 
     it('Filtering by type', function(){
+        let filteredProductsType = filter(products, ({ type }) => type == 'vegetable')
+        let vegetables = [
+            {'name': 'tomato', 'available': true, 'type': 'vegetable', 'price': 1.50},
+            {'name': 'cucumber', 'available': false, 'type': 'vegetable', 'price': 0.90}
+        ]
+
         assert.sameDeepMembers(filteredProductsType, vegetables)
+    })
+
+    it('Filtering by price, products that are under 5€', function() {
+        let filteredProductsPrice = filter(products, ({ price }) => price <= 5)
+        let cheapProducts = [
+            {'name': 'tomato', 'available': true, 'type': 'vegetable', 'price': 1.50},
+            {'name': 'cucumber', 'available': false, 'type': 'vegetable', 'price': 0.90},
+            {'name': 'baguette', 'available': false, 'type': 'bread', 'price': 2.50},
+        ]
+
+        assert.sameDeepMembers(filteredProductsPrice, cheapProducts)
     })
     
     it('Filtering by producer, producer not in array', function(){
+        let filteredProductsProducer = filter(products, ({ producer }) => producer == 'Mäkinen')
+        let emptyArray = [[]]
+
         assert.sameDeepMembers(filteredProductsProducer, emptyArray)
     })
 

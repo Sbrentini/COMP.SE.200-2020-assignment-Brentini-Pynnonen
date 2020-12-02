@@ -5,7 +5,7 @@ const { assert } = pkg
 describe('Unit test for isObjectLike', function(){
     let map = {}
     let array = [1, 2, 3]
-    let str = 'asd'
+    let str = new String('asd')
     let num = 3
 
     it('Map is object-like', function(){
@@ -16,7 +16,7 @@ describe('Unit test for isObjectLike', function(){
         assert.isTrue(isObjectLike(array))
     })
 
-    it('str is object-like', function(){
+    it('String object is object-like', function(){
         assert.isTrue(isObjectLike(str))
     })
 
