@@ -53,7 +53,7 @@ describe('Integration test for shopping cart functionality', function (){
     })
 
     it('Now the shopping cart sum is 1011.04', function(){
-        let actualSum = somethingExpensive.cost + chicken.cost + apple.cost;
+        let actualSum = 1011.04;
         assert.equal(shoppingCart1.totalSum, actualSum);
     })
 
@@ -71,7 +71,7 @@ describe('Integration test for shopping cart functionality', function (){
         shoppingCart2.productsInCart.push(apple);
         shoppingCart2.productsInCart.push(apple);
         shoppingCart2.productsInCart.push(chicken);
-        let actualSum = 2*chicken.cost + 4*apple.cost;
+        let actualSum = 24.5;
         assert.lengthOf(shoppingCart2.productsInCart, 6);
         shoppingCart2.totalSum = reduce(shoppingCart2.productsInCart, (sum, products) => sum + products.cost, 0.0);
         assert.equal(shoppingCart2.totalSum, actualSum);

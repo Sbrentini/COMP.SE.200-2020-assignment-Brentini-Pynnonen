@@ -19,11 +19,11 @@ describe('Unit test for counting occurances from a collection', function (){
     const typeObject = { fruit: 3, vegetable: 2, meat: 2, seafood: 1 };
     const availableObject = { true: 5, false: 3 };
 
-    it('Counting the number of types from an imaginery product object array', function(){
+    it('Counting the number of types from an imaginary product object array', function(){
         assert.equal(countBy(products, value => value.type), typeObject);
     })
 
-    it('Counting the number of available products from an imaginery product object array', function(){
+    it('Counting the number of available products from an imaginary product object array', function(){
         assert.equal(countBy(products, value => value.available), availableObject);
     })
 })

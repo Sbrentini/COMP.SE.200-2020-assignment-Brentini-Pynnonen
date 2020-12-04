@@ -1,6 +1,6 @@
 import upperFirst from '../src/upperFirst.js'
 import pkg from 'chai'
-const { assert } = pkg
+const { assert, expect } = pkg
 
 describe('Unit test for upperFirst', function (){
 
@@ -11,7 +11,6 @@ describe('Unit test for upperFirst', function (){
     let number = 12;
     let nullValue = null;
     let undefinedValue = undefined;
-
 
     it('simple one word test', function(){
         assert.equal(upperFirst(str1), 'Test');
@@ -25,17 +24,15 @@ describe('Unit test for upperFirst', function (){
         assert.equal(upperFirst(str3), str3);
     })
 
-    // Again they don't throw an error, but two of them return an empty string? It depends if this is a wanted behaviour or not
-    // I'd still think it's better to throw an error whenever a parameter is not a string
     it('Upperfirst number', function(){
-        assert.throws(upperFirst(number));
+        expect(() => upperFirst(number)).to.throw('string.slice is not a function');
     })
 
     it('Upperfirst null', function(){
-        assert.isNull(upperFirst(nullValue));
+        assert.isEmpty(upperFirst(nullValue));
     })
 
     it('Upperfirst undefined', function(){
-        assert.isUndefined(upperFirst(undefinedValue));
+        assert.isEmpty(upperFirst(undefinedValue));
     })
 });

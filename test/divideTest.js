@@ -4,11 +4,11 @@ const { assert } = pkg
 
 describe('Unit test for divide', function(){
 
-    it('Result integer', function (){
+    it('Divide integer by integer that results in integer', function (){
         assert.equal(divide(6, 2), 3)
     });
 
-    it('Result float', function(){
+    it('Divide integer by integer that results in float', function(){
         assert.equal(divide(6, 4), 1.5)
     })
 
